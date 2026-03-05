@@ -1,6 +1,7 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Better reset that doesn't break Tailwind */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -10,7 +11,7 @@ html {
 }
 
 body {
-  margin: 0;  /* Reset body margin only */
+  margin: 0;
   background-color: #000;
   color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -25,78 +26,50 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-.bg-gradient-radial {
-  background: radial-gradient(circle, var(--tw-gradient-stops));
+/* ── Navbar responsive rules ── */
+.nav-desktop-links {
+  display: none;
+}
+.nav-hamburger {
+  display: flex;
+}
+.nav-mobile-menu {
+  display: flex;
 }
 
-.text-balance {
-  text-wrap: balance;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #000;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Smooth animations */
-* {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Image loading optimization */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Video optimization */
-video {
-  max-width: 100%;
-  height: auto;
+@media (min-width: 768px) {
+  .nav-desktop-links {
+    display: flex;
+  }
+  .nav-hamburger {
+    display: none;
+  }
+  .nav-mobile-menu {
+    display: none !important;
+  }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: #000;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 5px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-/* Smooth animations */
-* {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Image loading optimization */
 img {
-  @apply max-w-full h-auto;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Video optimization */
 video {
-  @apply max-w-full h-auto;
+  max-width: 100%;
+  height: auto;
 }
