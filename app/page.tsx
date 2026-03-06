@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import MilestoneTimeline from '@/components/Milestonetimeline';
 
 export default function Home() {
 
@@ -13,7 +14,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero */}
-      <section className="min-h-screen px-6 md:px-8 flex flex-col justify-center items-center text-center">
+      <section style={{ minHeight: 'calc(100vh - 34px)', marginTop: '34px' }} className="px-6 md:px-8 flex flex-col justify-center items-center text-center">
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -28,7 +29,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.35 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
           className="mt-8 md:mt-10"
         >
           <p className="text-lg sm:text-2xl md:text-3xl text-gray-300 mb-10 md:mb-12">
@@ -61,7 +62,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-xl sm:text-2xl md:text-4xl font-normal leading-relaxed mb-8 md:mb-16">
-              We are Pakistan's elite RoboWar combat robotics team – expert engineers,
+              We are Pakistan's elite RoboWar combat robotics team, expert engineers,
               fearless builders, and fierce competitors. Our bots are the toughest and
               most innovative on the field.
             </h2>
@@ -71,6 +72,70 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* ── ABOUT SECTION ── */}
+
+      {/* Who we are / Origin / Philosophy */}
+      <section className="py-16 md:py-24 px-6 md:px-8">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+            {[
+              {
+                label: 'Who we are.',
+                text: 'A robotics team of engineers from Pakistan obsessed with the thrill of RoboWar combat. United by innovation, aggression, and technical mastery.',
+              },
+              {
+                label: 'Our origin.',
+                text: 'Formed in 2022, Team Megabyte was born out of passion for mechanical mayhem and cutting-edge engineering, driven to build, battle, and win.',
+              },
+              {
+                label: 'Philosophy.',
+                text: 'We believe that relentless engineering, bold design, and strategic thinking lead to victory. Craft. Test. Evolve. Repeat.',
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={item.label}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+              >
+                <p className="text-xs tracking-[0.3em] text-gray-500 uppercase mb-4 text-center">{item.label}</p>
+                <p className="text-gray-300 text-base md:text-lg leading-relaxed text-center">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="py-12 md:py-20 px-6 md:px-8">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 border border-gray-800 divide-x divide-y md:divide-y-0 divide-gray-800">
+            {[
+              { value: '4',   label: 'National Events'  },
+              { value: '7+',  label: 'Robots Built'     },
+              { value: '3',   label: 'Years Active'     },
+              { value: '2025',label: 'International Debut' },
+            ].map((stat) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="px-6 md:px-10 py-8 md:py-10 text-center"
+              >
+                <p className="text-4xl md:text-6xl font-bold mb-2">{stat.value}</p>
+                <p className="text-xs text-gray-500 tracking-widest uppercase">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline — Curved Z-shape */}
+      <MilestoneTimeline />
 
       {/* Three Cards */}
       <section id="robots" className="py-16 md:py-40 px-6 md:px-8 flex justify-center">

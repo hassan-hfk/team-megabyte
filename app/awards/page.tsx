@@ -6,41 +6,41 @@ import Footer from '@/components/Footer';
 
 const featuredAwards = [
   {
-    title: 'RoboWars Asia Champion',
-    year: '2024',
+    title: 'ENIM Robot 10 Champion',
+    year: '2025',
     event: 'RoboWars Asia Championship',
-    location: 'Kuala Lumpur, Malaysia',
+    location: 'Ecole Nationale d’Ingénieurs de Monastir, Tunisia',
     category: 'Heavyweight',
     description:
-      'The biggest title in Asian combat robotics. MK-IV went undefeated through the entire bracket, defeating 8 opponents in 4 days to claim the championship.',
+      'The biggest title in Asian combat robotics. Megabyte V-2 stormed through the grand arena bracket. After a streak of decisive victories against formidable opponents, it stood alone as the event’s ultimate champion',
   },
   {
-    title: 'Best Engineering Design',
-    year: '2024',
-    event: 'RoboWars Asia Championship',
-    location: 'Kuala Lumpur, Malaysia',
-    category: 'Innovation Award',
+    title: 'NERC Battle War',
+    year: '2025',
+    event: 'NERC',
+    location: 'NUST EME, Rawalpindi',
+    category: 'Heavyweight',
     description:
-      'Awarded to the most technically sophisticated machine at the event. MK-IV\'s modular weapon system and active cooling impressed the judging panel.',
+      'In front of a roaring crowd, Megabyte V-2 went undefeated through the entire bracket, defeating 8 opponents to claim the championship.',
   },
   {
-    title: 'Pakistan Open Champion',
-    year: '2024',
-    event: 'Pakistan RoboWar Open',
-    location: 'Lahore, Pakistan',
+    title: 'NASCON RoboWars',
+    year: '2025',
+    event: 'NASCON',
+    location: 'Fast University, Islamabad',
     category: 'Featherweight + Beetleweight',
     description:
-      'A double-category sweep. Byte Fury and Nano Sting both won their respective weight classes on the same day — a first in Team Megabyte history.',
+      'Dominating the arena from start to finish, Megabyte V-2 crushed every challenger in its path. With 7 consecutive victories and flawless performance, it secured the championship title at NASCON Fast',
   },
 ];
 
 const otherAwards = [
-  { title: 'Crowd Favorite Award',          year: '2024', event: 'Pakistan RoboWar Open'       },
-  { title: 'India Invitational Finalist',   year: '2023', event: 'RoboWar India Invitational'  },
-  { title: 'NUST Champion — Featherweight', year: '2023', event: 'NUST Engineering Fest'        },
-  { title: 'Most Aggressive Bot',           year: '2023', event: 'NUST Engineering Fest'        },
-  { title: 'LUMS Runner-Up',                year: '2022', event: 'LUMS Battle Bots'             },
-  { title: 'Best Newcomer Team',            year: '2022', event: 'LUMS Battle Bots'             },
+  { title: 'Heavyweight Arena Champion',          year: '2024', event: 'NASCON Fast'       },
+  { title: 'Heavyweight Knockout Champion',   year: '2024', event: 'YRT Peshawar'  },
+  { title: 'Grand Champion — Heavyweight', year: '2023', event: 'Youth Robotec'        },
+  { title: 'Heavyweight Combat Champion',           year: '2023', event: 'Hi-RoboTec'        },
+  { title: 'Heavyweight Bracket Winner',                year: '2022', event: 'NERC NUST'             },
+  { title: 'Heavyweight Finals Champion',            year: '2022', event: 'SOFTEC Lahore'             },
 ];
 
 export default function AwardsPage() {

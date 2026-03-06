@@ -26,50 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-/* ── Navbar responsive rules ── */
-.nav-desktop-links {
-  display: none;
-}
-.nav-hamburger {
-  display: flex;
-}
-.nav-mobile-menu {
-  display: flex;
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
 
-@media (min-width: 768px) {
-  .nav-desktop-links {
-    display: flex;
-  }
-  .nav-hamburger {
-    display: none;
-  }
-  .nav-mobile-menu {
-    display: none !important;
-  }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #000;
-}
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-video {
-  max-width: 100%;
-  height: auto;
-}
+img { max-width: 100%; height: auto; }
+video { max-width: 100%; height: auto; }
