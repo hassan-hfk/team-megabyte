@@ -10,7 +10,7 @@ const teamMembers = [
     role: 'Team Captain & Founder',
     speciality: 'Mechanical Systems',
     bio: 'The brain behind the bots. Hassan leads design, fabrication, and strategy. Three years building combat robots, zero tolerance for losing.',
-    image: '/images/team/khokar.jpg',
+    image: '/images/team/khokar.JPG',
     initials: 'HK',
   },
   {
