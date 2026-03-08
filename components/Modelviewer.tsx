@@ -75,7 +75,7 @@ export default function ModelViewer({ url = '/models/megabyte-v2.glb' }: { url?:
         <directionalLight position={[-5, 3, -5]} intensity={0.4} color="#4488ff" />
 
         <Suspense fallback={<Loader />}>
-          <Bounds fit clip observe damping={6} margin={1.5}>
+          <Bounds fit clip observe margin={1.5}>
             <SpinningModel url={url} />
           </Bounds>
           <Environment preset="city" />

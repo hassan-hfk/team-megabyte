@@ -1,7 +1,4 @@
 {
-  "/awards/page": "app/awards/page.js",
-  "/team/page": "app/team/page.js",
-  "/sponsors/page": "app/sponsors/page.js",
   "/robots/page": "app/robots/page.js",
-  "/competitions/page": "app/competitions/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
