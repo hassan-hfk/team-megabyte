@@ -1,4 +1,4 @@
-// File: C:\Users\HFK\Desktop\Hassan-Dev-Test\Fiver\team-megabyte\app\layout.tsx
+// File: C:\Users\HFK\Desktop\Hassan-Dev-Test\team-megabyte\team-megabyte\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
