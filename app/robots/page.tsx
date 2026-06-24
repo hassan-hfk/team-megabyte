@@ -84,7 +84,7 @@ export default function RobotsPage() {
   const closeModel = () => setActiveModel(null);
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen relative z-10">
       <Navbar />
 
       {/* Hero */}

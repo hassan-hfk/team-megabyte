@@ -67,7 +67,7 @@ const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
 
 export default function CompetitionsPage() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen relative z-10">
       <Navbar />
 
       {/* Hero */}

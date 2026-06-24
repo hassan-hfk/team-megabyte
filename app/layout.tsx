@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 export const metadata: Metadata = {
   title: "Team Megabyte - Pakistan's RoboWar Combat Team",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ParticlesBackground />
+        {children}
+      </body>
     </html>
   );
 }

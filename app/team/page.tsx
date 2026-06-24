@@ -129,7 +129,7 @@ function Avatar({ member }: { member: typeof teamMembers[0] }) {
 
 export default function TeamPage() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen relative z-10">
       <Navbar />
 
       {/* Hero */}

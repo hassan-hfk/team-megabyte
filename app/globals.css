@@ -33,3 +33,18 @@ h1, h2, h3, h4, h5, h6 {
 
 img { max-width: 100%; height: auto; }
 video { max-width: 100%; height: auto; }
+
+/* ── Particles.js background ── */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+#particles-js canvas {
+  display: block;
+  pointer-events: all;
+}

@@ -46,7 +46,7 @@ const otherAwards = [
 export default function AwardsPage() {
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen relative z-10">
       <Navbar />
 
       {/* Hero */}

@@ -129,7 +129,7 @@ function SponsorLogo({ logo, initials, size = 'md' }: { logo: string; initials: 
 
 export default function SponsorsPage() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen relative z-10">
       <Navbar />
 
       {/* Hero */}
