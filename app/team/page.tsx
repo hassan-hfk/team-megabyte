@@ -10,7 +10,7 @@ const teamMembers = [
     role: 'Team Captain',
     speciality: 'Mechanical Systems',
     bio: 'The brain behind the bots. Uzair leads design, fabrication, and strategy. Three years building combat robots, zero tolerance for losing.',
-    image: '/images/team/uzair.JPG',
+    image: '/images/team/uzair.jpg',
     initials: 'HK',
   },
   {
@@ -26,7 +26,7 @@ const teamMembers = [
     role: 'Drive System Engineer',
     speciality: 'Motors & Gearboxes',
     bio: 'If the robot moves, Khokar designed how. He obsesses over power curves, gear ratios, and torque vectors so opponents cant escape.',
-    image: '/images/team/khokar.jpg',
+    image: '/images/team/khokar.JPG',
     initials: 'UA',
   },
   {
