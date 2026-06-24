@@ -48,3 +48,29 @@ video { max-width: 100%; height: auto; }
   display: block;
   pointer-events: all;
 }
+
+/* ── Film grain overlay ── */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Scale-down of main page content (navbar and footer excluded). */
+/* Lower --page-zoom = more zoomed out. The hero compensates for this value */
+/* so it always fills the viewport regardless of how far it is zoomed out. */
+:root {
+  --page-zoom: 0.82;
+}
+.page-zoom {
+  zoom: var(--page-zoom);
+}

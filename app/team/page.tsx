@@ -6,11 +6,11 @@ import Footer from '@/components/Footer';
 
 const teamMembers = [
   {
-    name: 'Hassan Khokhar',
-    role: 'Team Captain & Founder',
+    name: 'Uzair Ahmed',
+    role: 'Team Captain',
     speciality: 'Mechanical Systems',
-    bio: 'The brain behind the bots. Hassan leads design, fabrication, and strategy. Three years building combat robots, zero tolerance for losing.',
-    image: '/images/team/khokar.JPG',
+    bio: 'The brain behind the bots. Uzair leads design, fabrication, and strategy. Three years building combat robots, zero tolerance for losing.',
+    image: '/images/team/uzair.JPG',
     initials: 'HK',
   },
   {
@@ -22,11 +22,11 @@ const teamMembers = [
     initials: 'AW',
   },
   {
-    name: 'Uzair Ahmed',
+    name: 'Hassan Khokar',
     role: 'Drive System Engineer',
     speciality: 'Motors & Gearboxes',
-    bio: 'If the robot moves, Uzairs designed how. He obsesses over power curves, gear ratios, and torque vectors so opponents cant escape.',
-    image: '/images/team/uzair.jpg',
+    bio: 'If the robot moves, Khokar designed how. He obsesses over power curves, gear ratios, and torque vectors so opponents cant escape.',
+    image: '/images/team/khokar.jpg',
     initials: 'UA',
   },
   {
@@ -46,12 +46,12 @@ const teamMembers = [
     initials: 'ZC',
   },
   {
-    name: 'Muhammad Haseeb Habib',
-    role: 'Weapon Systems Engineer',
-    speciality: 'Spinners & Actuators',
-    bio: 'Responsible for everything that destroys. Haseeb engineers the weapons that have launched opponents out of arenas across Asia.',
-    image: '/images/team/haseeb.jpg',
-    initials: 'HH',
+    name: 'Ahmad Yar Babar',
+    role: 'Social Media Manager',
+    speciality: 'Content Strategy / Community Engagement',
+    bio: 'Ahmed highlights our journey, behind-the-scenes robot builds and competitions. He manages our social presence and keeps the community engaged with every milestone.',
+    image: '/images/team/rana.jpg',
+    initials: 'AY',
   },
   {
     name: 'Hamza Chughtai',
@@ -70,12 +70,12 @@ const teamMembers = [
     initials: 'MM',
   },
   {
-    name: 'Ahmed Yar Babar',
-    role: 'Social Media Manager',
-    speciality: 'Content Strategy / Community Engagement',
-    bio: 'Ahmed highlights our journey, behind-the-scenes robot builds and competitions. He manages our social presence and keeps the community engaged with every milestone.',
-    image: '/images/team/rana.jpg',
-    initials: 'AY',
+    name: 'Muhammad Haseeb Habib',
+    role: 'Weapon Systems Engineer',
+    speciality: 'Spinners & Actuators',
+    bio: 'Responsible for everything that destroys. Haseeb engineers the weapons that have launched opponents out of arenas across Asia.',
+    image: '/images/team/haseeb.jpg',
+    initials: 'HH',
   },
 ];
 

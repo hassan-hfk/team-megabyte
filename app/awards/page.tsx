@@ -11,6 +11,7 @@ const featuredAwards = [
     event: 'RoboWars Asia Championship',
     location: 'Ecole Nationale d’Ingénieurs de Monastir, Tunisia',
     category: 'Heavyweight',
+    image: '/images/Awards/Tunisia_Winning.jpg',
     description:
       'The biggest title in Asian combat robotics. Megabyte V-2 stormed through the grand arena bracket. After a streak of decisive victories against formidable opponents, it stood alone as the event’s ultimate champion',
   },
@@ -20,6 +21,7 @@ const featuredAwards = [
     event: 'NERC',
     location: 'NUST EME, Rawalpindi',
     category: 'Heavyweight',
+    image: '/images/Awards/NERC_2026.jpeg',
     description:
       'In front of a roaring crowd, Megabyte V-2 went undefeated through the entire bracket, defeating 8 opponents to claim the championship.',
   },
@@ -29,6 +31,7 @@ const featuredAwards = [
     event: 'NASCON',
     location: 'Fast University, Islamabad',
     category: 'Featherweight + Beetleweight',
+    image: '/images/Robots/Megabyte_V2.jpg',
     description:
       'Dominating the arena from start to finish, Megabyte V-2 crushed every challenger in its path. With 7 consecutive victories and flawless performance, it secured the championship title at NASCON Fast',
   },
@@ -99,45 +102,47 @@ export default function AwardsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.55, delay: index * 0.1 }}
-                className="group relative border border-gray-800 hover:border-white transition-colors duration-500 p-6 md:p-12 overflow-hidden"
+                className="group border border-gray-800 hover:border-white transition-colors duration-500 overflow-hidden"
               >
-                {/* Large faded index number — decorative background text */}
-                <span
-                  className="absolute right-8 top-1/2 -translate-y-1/2 text-[10rem] font-bold leading-none select-none pointer-events-none text-white/[0.03] group-hover:text-white/[0.06] transition-colors duration-500"
-                >
-                  {String(index + 1).padStart(2, '0')}
-                </span>
+                <div className="grid grid-cols-1 md:grid-cols-[1.25fr_1fr]">
+                  {/* Content */}
+                  <div className="relative order-2 md:order-1 p-6 md:p-10 overflow-hidden">
+                    {/* Large faded index number — decorative background text */}
+                    <span className="absolute right-4 bottom-2 text-[8rem] md:text-[10rem] font-bold leading-none select-none pointer-events-none text-white/[0.03] group-hover:text-white/[0.05] transition-colors duration-500">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
 
-                <div className="relative z-10 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-start">
-                  {/* Left content */}
-                  <div>
-                    {/* Meta row */}
-                    <div className="flex flex-wrap items-center gap-3 mb-5">
-                      <span className="text-xs tracking-widest uppercase bg-white text-black px-3 py-1 rounded-full font-semibold">
-                        {award.year}
-                      </span>
-                      <span className="text-xs text-gray-500 tracking-wider">{award.category}</span>
-                      <span className="text-gray-700">·</span>
-                      <span className="text-xs text-gray-500 tracking-wider">{award.location}</span>
+                    <div className="relative z-10">
+                      {/* Meta row */}
+                      <div className="flex flex-wrap items-center gap-3 mb-5">
+                        <span className="text-xs tracking-widest uppercase bg-white text-black px-3 py-1 rounded-full font-semibold">
+                          {award.year}
+                        </span>
+                        <span className="text-xs text-gray-500 tracking-wider">{award.category}</span>
+                        <span className="text-gray-700">·</span>
+                        <span className="text-xs text-gray-500 tracking-wider">{award.location}</span>
+                      </div>
+
+                      {/* Title */}
+                      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-3 leading-tight">
+                        {award.title}
+                      </h2>
+
+                      {/* Event name */}
+                      <p className="text-gray-500 text-sm tracking-wider mb-6">{award.event}</p>
+
+                      {/* Description */}
+                      <p className="text-gray-400 leading-relaxed max-w-[620px]">{award.description}</p>
                     </div>
-
-                    {/* Title */}
-                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-3 leading-tight">
-                      {award.title}
-                    </h2>
-
-                    {/* Event name */}
-                    <p className="text-gray-500 text-sm tracking-wider mb-6">{award.event}</p>
-
-                    {/* Description */}
-                    <p className="text-gray-400 leading-relaxed max-w-[620px]">{award.description}</p>
                   </div>
 
-                  {/* Right: trophy icon */}
-                  <div className="hidden md:flex items-center justify-center w-20 h-20 border border-gray-800 group-hover:border-white transition-colors duration-500 rounded-full shrink-0">
-                    <svg className="w-8 h-8 text-gray-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 01-8 0M12 11v5m-4 2h8M7 7H4a1 1 0 00-1 1v1a4 4 0 004 4h1M17 7h3a1 1 0 011 1v1a4 4 0 01-4 4h-1" />
-                    </svg>
+                  {/* Image */}
+                  <div className="relative order-1 md:order-2 min-h-[220px] md:min-h-full overflow-hidden">
+                    <img
+                      src={award.image}
+                      alt={award.title}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
                   </div>
                 </div>
               </motion.div>

@@ -13,8 +13,9 @@ export default function Home() {
     <div className="text-white min-h-screen relative z-10">
       <Navbar />
 
+      <div className="page-zoom">
       {/* Hero */}
-      <section style={{ minHeight: 'calc(100vh - 34px)', marginTop: '34px' }} className="px-6 md:px-8 flex flex-col justify-center items-center text-center">
+      <section style={{ minHeight: 'calc((100vh - 34px) / var(--page-zoom))', marginTop: 'calc(34px / var(--page-zoom))' }} className="px-6 md:px-8 flex flex-col justify-center items-center text-center">
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -216,6 +217,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      </div>
 
       <Footer />
     </div>

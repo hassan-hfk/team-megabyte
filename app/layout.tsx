@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
+import { Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import ParticlesBackground from "@/components/ParticlesBackground";
+
+// Display: industrial grotesque, used for the footer wordmark and brand marks.
+const display = Archivo({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+// Mono: technical readout face for the footer labels and small data.
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Team Megabyte - Pakistan's RoboWar Combat Team",
@@ -19,9 +34,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${display.variable} ${mono.variable}`}
+    >
       <body>
         <ParticlesBackground />
+        <div className="grain" aria-hidden="true" />
         {children}
       </body>
     </html>

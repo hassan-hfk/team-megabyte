@@ -22,7 +22,7 @@ const competitions = [
     result: '1st Place',
     resultType: 'winner',
     robot: 'MEGABYTE V-2',
-    image: '/images/awards.jpeg',
+    image: '/images/Robots/Megabyte_V2.jpg',
     description: 'A dominant run through the heavyweight bracket. V-2 showed exactly why it earned our first podium — relentless, fast, and impossible to stop.',
   },
   {
@@ -32,7 +32,7 @@ const competitions = [
     result: 'Finalist',
     resultType: 'finalist',
     robot: 'MEGABYTE V-2',
-    image: '/images/robots.jpeg',
+    image: '/images/Robots/Megabyte_V2.jpg',
     description: 'A hard-fought campaign ended in the final when V-2 suffered a drive system failure in the last 30 seconds while leading. The crowd still chanted our name walking off.',
   },
   {
@@ -52,7 +52,7 @@ const competitions = [
     result: '2nd Place',
     resultType: 'finalist',
     robot: 'MEGABYTE V-1',
-    image: '/images/awards.jpeg',
+    image: '/images/Robots/Megabyte_V1.jpg',
     description: 'Our very first competition. A learning curve that hardened the team and revealed exactly what V-1 needed to evolve. Every scar had a lesson.',
   },
 ];
@@ -109,7 +109,7 @@ export default function CompetitionsPage() {
 
       {/* Timeline */}
       <section className="py-8 md:py-16 px-6 md:px-8 pb-20 md:pb-32">
-        <div className="max-w-[1000px] mx-auto">
+        <div className="max-w-[800px] mx-auto">
           {years.map((year, yi) => (
             <div key={year} className="flex gap-0 md:gap-12">
 
